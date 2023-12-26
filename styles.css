@@ -1,0 +1,137 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.notes {
+    display: flex;
+    height: 100%;
+    background-color: #00af8c;
+}
+
+.notes * {
+    font-family: sans-serif;
+}
+
+.notes__sidebar {
+    border-right: 2px solid #dddddd;
+    flex-shrink: 0;
+    overflow-y: auto;
+    padding: 1em;
+    width: 300px;
+    position: relative;
+
+}
+
+.notes__add {
+    background: #009578;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.notes__add:hover {
+    background: #00af8c;
+}
+
+.notes__list-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes__list-item--selected {
+    background: #dfdfdf;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.notes-main-div{
+    box-shadow: 0px 5px 10px 0px black;
+    margin-top: 30px;
+    overflow-x: hidden;
+}
+
+.notes__small-updated {
+    padding: 10px;
+}
+
+.notes__small-title {
+    font-size: 1.2em;
+    border-bottom: 2px solid aqua;
+    margin: 5px 0px;
+    color:blueviolet;
+    background-color: antiquewhite;
+    width: 100%;
+    text-align:center;
+}
+
+.notes__small-body {
+    padding: 0 10px;
+}
+
+.notes__small-updated {
+    color: purple;
+    font-style: italic;
+    text-align: center;
+    font-size: 15px;
+}
+
+.notes__preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+
+.notes__body {
+    background-color: #252525;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: aqua;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.notes__title {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.notes__body {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+}
+.notes__delete-btn{
+    background-color: aqua;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0px 0px 5px 5px;
+}
+.notes__delete-btn:hover{
+    background-color: rgba(1, 170, 170, 0.5);
+    
+}
+.notes__delete-btn:active{
+   box-shadow: 0px 0px 10px 0px rgb(204, 0, 255);
+}
